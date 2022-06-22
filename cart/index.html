@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+        
+        <title>Cart - The Fiesta Fowl &mdash; Gnomes and Birthday boxes</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <!-- <../img src="../img/logo.png" alt="" class="logo"> -->
+                <span class="header__label">The Fiesta Fowl - Gnomes and Birthday boxes</span>
+                <nav class="user-nav">
+                    <div class="header__social">
+                        <a class="header__link" href="https://www.facebook.com/pages/category/Product-Service/The-Fiesta-Fowl-2249964808603002/" target="_blank">
+                            <svg class="header__link-icon">
+                                <use xlink:href="../img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__social">
+                        <a class="header__link" href="/cart">
+                            <svg class="header__link-icon">
+                                <use xlink:href="../img/sprite.svg#icon-shopping-cart"></use>
+                            </svg>
+                        </a>
+                        <span id="cartcount" class="user-nav__notification">0</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="menu">
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item">
+                            <a href="/" class="menu-nav__link">
+                                <svg class="menu-nav__icon">
+                                    <use xlink:href="../img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Fiesta Fowl</span>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">
+                                <svg class="menu-nav__icon">
+                                    <use xlink:href="../img/sprite.svg#icon-swarm"></use>
+                                </svg>
+                                <span>Gnomes</span>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">
+                                <svg class="menu-nav__icon">
+                                    <use xlink:href="../img/sprite.svg#icon-box"></use>
+                                </svg>
+                                <span>Birthdays</span>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#" class="menu-nav__link">
+                                <svg class="menu-nav__icon">
+                                    <use xlink:href="../img/sprite.svg#icon-bookmarks"></use>
+                                </svg>
+                                <span>Cards</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <main class="main-view">
+                    <h1 class="main-view__heading">Ready for Checkout</h1>
+
+                    <div class="cart">
+                        <div id="cartitems" class="cart__items">
+                        </div>
+                        <div class="cart__summary">
+                            <h4 class="cart__summary-heading">Cart Summary</h4>
+                            <div id="cartsummarycount" class="cart__summary-count"></div>
+                            <div class="cart__summary-counttotal">
+                                <span>Total</span> 
+                                <div id="cartsummarytotal" class="cart__summary-total"></div>
+                            </div>
+                            <button class="btn btn-sm">
+                                <span class="btn__visible">Checkout</span>
+                                <span class="btn__invisible">Thank you!</span>
+                            </button>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer">
+                    <div class="footer__columns">
+                        <div class="footer__column">
+                            <h2>The Fiesta Fowl</h2>
+                            <ul>
+                                <li>
+                                    <a class="footer__link" href="/">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../img/sprite.svg#icon-home"></use>
+                                        </svg>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__link" href="/gnomes">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../img/sprite.svg#icon-swarm"></use>
+                                        </svg>
+                                        Gnomes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__link" href="/partners">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../img/sprite.svg#icon-box"></use>
+                                        </svg>
+                                        Birthdays
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer__link" href="/prices">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../img/sprite.svg#icon-bookmarks"></use>
+                                        </svg>
+                                        Cards
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <h2>Contact us</h2>
+                            <ul>
+                                <li>
+                                    <a class="footer__link" href="mailto:sales@mylifeline.io">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../img/sprite.svg#icon-mail"></use>
+                                        </svg>
+                                        faith@csda.co.za
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <h2>Follow us</h2>
+                            <ul>
+                                <li>
+                                    <a class="footer__link" href="https://www.facebook.com/mylifelineio" target="_blank">
+                                        <svg class="footer__icon">
+                                            <use xlink:href="../img/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">
+                        <span>
+                            &copy; 2021 Fiesta Fowl (PTY) Ltd. All rights reserved.
+                        </span>
+                        <span>
+                            <a class="footer__link" href="https://www.youtube.com/channel/UCZr-ztTQClNv6vSt0K1xTcw" target="_blank">
+                                Powered by Trublo.com
+                            </a>
+                        </span>
+                    </div>
+                </footer>
+            </div>  
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                populateCart();
+            });
+            function populateCart() {
+                var cartarray = getCart();
+                var itemelement = document.getElementById("cartitems");
+                debugger
+                var html = "";
+                if (cartarray.length > 0) {
+                    for (var x=0; x < cartarray.length; x++) {
+                        var item = itemtemplate.replace("[image]", cartarray[x].img);
+                        item = item.replace("[title]", cartarray[x].title);
+                        item = item.replace("[price]", cartarray[x].currency + " " + cartarray[x].price);
+                        item = item.replace("[id]", cartarray[x].id);
+                        html += item;
+                    }
+                }
+                else
+                    html = emptytemplate;
+                
+                itemelement.innerHTML = html;
+                document.getElementById("cartcount").innerHTML = cartarray.length;
+                document.getElementById("cartsummarycount").innerHTML = cartarray.length + " items";
+                document.getElementById("cartsummarytotal").innerHTML = "R " + getTotal().toLocaleString();
+            }
+            function getCart() {
+                var cart = localStorage.getItem("cartitems");
+                var cartarray = [];
+                if (cart != null) {
+                    var cartarray = JSON.parse(cart);
+                }
+                return cartarray;
+            }
+            function getTotal() {
+                var cartarray = getCart();
+                var total = 0;
+                for (var x=0; x < cartarray.length; x++) {
+                    total += parseFloat(cartarray[x].price);
+                }
+                return total;
+            }
+            function removeCartItem(id) {
+                debugger
+                var cartarray = getCart();
+                for (var x=0; x < cartarray.length; x++) {
+                    if (cartarray[x].id == id)
+                        cartarray.pop(cartarray[x]);
+                }
+                localStorage.setItem("cartitems", JSON.stringify(cartarray));
+                populateCart();
+            }
+
+            var itemtemplate = "";
+            itemtemplate += "<div class=\"cart__item\">";
+            itemtemplate += "    <img src=\"../[image]\" alt=\"\" class=\"cart__item-photo\">";
+            itemtemplate += "    <div class=\"cart__item-title\">[title]</div>";
+            itemtemplate += "    <div class=\"cart__item-right\">";
+            itemtemplate += "        <div>";
+            itemtemplate += "            <div class=\"cart__item-price\">[price]</div>";
+            itemtemplate += "            <div class=\"cart__item-qty\"><span>Qty:</span> <select class=\"cart__item-changeqty\" value=\"1\"><option value=1>1</option></select></div>";
+            itemtemplate += "       </div>";
+            itemtemplate += "       <div>";
+            itemtemplate += "          <a class=\"cart__item-link\" onclick=\"removeCartItem([id])\">";
+            itemtemplate += "              <svg class=\"cart__item-icon\">";
+            itemtemplate += "                  <use xlink:href=\"../img/sprite.svg#icon-trash\"></use>";
+            itemtemplate += "              </svg>";
+            itemtemplate += "              Remove";
+            itemtemplate += "          </a>";
+            itemtemplate += "       </div>";
+            itemtemplate += "    </div>";
+            itemtemplate += "</div>";
+
+            var emptytemplate = "<div class=\"cart__item\">";
+            emptytemplate += "    <div class=\"cart__item-title\">No items in your cart.</div>";
+            emptytemplate += "</div>";
+        </script>
+    </body>
+</html>
