@@ -57,6 +57,10 @@ $bp_micro: 20em; //320px / 16px (default screen) = 20
     box-sizing: inherit;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px explain 10px / 16px (browser default) = 62.5%
