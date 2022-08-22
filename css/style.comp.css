@@ -101,6 +101,7 @@ body {
   .header__logo {
     position: relative;
     top: 3rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
     z-index: 2000;
     height: 80px; }
